@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "8c2deb49-7e16-4ab0-b6b4-e56a93b258f7",
+		"name": "[ Spring Boot ] Documents Online API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get document by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user",
+						"value": "sa",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "abc123",
+						"type": "text"
+					},
+					{
+						"key": "trace",
+						"value": "236339d7-fe16-4162-a7a0-e9764aa4a7be",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/documents/1?entity=1&sector=1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"documents",
+						"1"
+					],
+					"query": [
+						{
+							"key": "entity",
+							"value": "1"
+						},
+						{
+							"key": "sector",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert new documento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user",
+						"value": "sa",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "abc123",
+						"type": "text"
+					},
+					{
+						"key": "trace",
+						"value": "236339d7-fe16-4162-a7a0-e9764aa4a7be",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/documents/insert",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"documents",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
