@@ -13,8 +13,9 @@ import org.springframework.util.StringUtils;
 public class ApiUtils {
 
     public static final String RESPONSE_OK_CODE = "OK";
-    public static final String RESPONSE_INTERNAL_ERROR_CODE = "ERR-01";
-    public static final String RESPONSE_REQUEST_ERROR_CODE = "ERR-02";
+    public static final String RESPONSE_LOGIN_ERROR_CODE = "ERR-01";
+    public static final String RESPONSE_INTERNAL_ERROR_CODE = "ERR-02";
+    public static final String RESPONSE_REQUEST_ERROR_CODE = "ERR-03";
 
     /**
      * Validate trace in and generate when this is blank
